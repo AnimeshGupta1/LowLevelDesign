@@ -1,0 +1,4 @@
+- Replace construction calls , with calls to special factory method
+    - These returned objects are called products
+
+-
