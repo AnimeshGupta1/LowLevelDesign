@@ -1,6 +1,9 @@
-package Zomato;
+package Zomato.managers;
 
 import java.util.ArrayList;
+
+import Zomato.models.Restaurant;
+
 public final class RestaurantManager {
     private static volatile RestaurantManager instance;
 
@@ -18,8 +21,7 @@ public final class RestaurantManager {
     }
 
     public void addRestaurant(Restaurant restaurant) {
-        getInstance().restaurants.add(restaurant);
+        this.restaurants.add(restaurant);
     }
 
-    
 }

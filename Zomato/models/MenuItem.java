@@ -1,4 +1,4 @@
-package Zomato;
+package Zomato.models;
 
 public class MenuItem {
 

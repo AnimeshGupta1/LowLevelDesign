@@ -1,4 +1,4 @@
-package Zomato;
+package Zomato.strategies;
 
 public class NetBanking implements IPaymentStrategy {
     public void pay() {

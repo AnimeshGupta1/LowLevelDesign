@@ -1,6 +1,8 @@
-package Zomato;
+package Zomato.managers;
 
 import java.util.ArrayList;
+
+import Zomato.models.Order;
 
 public final class OrderManager {
     public static volatile OrderManager instance;
@@ -19,7 +21,7 @@ public final class OrderManager {
     }
 
     public void addOrder(Order order) {
-        getInstance().orderList.add(order);
+        orderList.add(order);
     }
 
     

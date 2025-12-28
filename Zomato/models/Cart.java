@@ -1,21 +1,21 @@
-package Zomato;
+package Zomato.models;
 
 import java.util.ArrayList;
 
 public class Cart {
     Restaurant restaurant;
     ArrayList<MenuItem> items;
-
-    Cart(Restaurant restaurant) {
-        this.restaurant = restaurant;
-    }
     
     public void addToCart(MenuItem item) {
         items.add(item);
     }
 
-    public void totalCost() {
-
+    public double totalCost() {
+        double sum = 0;
+        for (MenuItem it : items) {
+            sum += it.getPrice();
+        }
+        return sum;
     }
     
     public void isEmpty() {
